@@ -1,0 +1,13 @@
+# syntax: int(string, base)
+
+binary = "1011"
+decimal = int(binary, 2)
+print(decimal)   # 11
+
+hex_num = "1A"
+decimal = int(hex_num, 16)
+print(decimal)   # 26
+
+octal = "17"
+decimal = int(octal, 8)
+print(decimal)   # 15
