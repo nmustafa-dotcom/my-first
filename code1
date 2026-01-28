@@ -1,0 +1,37 @@
+digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+def base_to_decimal(number, base):
+    number = number.upper()
+    decimal = 0
+
+    for digit in number:
+        value = digits.index(digit)
+        decimal = decimal * base + value
+
+    return decimal
+
+
+def decimal_to_base(number, base):
+    if number == 0:
+        return "0"
+
+    result = ""
+    while number > 0:
+        result = digits[number % base] + result
+        number = number // base
+
+    return result
+
+
+# ---------- MAIN PROGRAM ----------
+num = "1A3"
+from_base = 16
+to_base = 2
+
+decimal_value = base_to_decimal(num, from_base)
+final_result = decimal_to_base(decimal_value, to_base)
+
+print("Original number:", num)
+print("From base:", from_base)
+print("To base:", to_base)
+print("Converted value:", final_result)
