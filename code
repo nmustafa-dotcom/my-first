@@ -1,0 +1,14 @@
+number = "1101"   # change this value
+base = 2          # change the base
+decimal = 0
+power = 0
+
+digits = "0123456789ABCDEF"
+number = number.upper()
+
+for digit in number[::-1]:
+    value = digits.index(digit)
+    decimal = decimal + value * (base ** power)
+    power = power + 1
+
+print("Decimal value:", decimal)
