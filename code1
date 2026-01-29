@@ -31,6 +31,15 @@ to_base = 2
 decimal_value = base_to_decimal(num, from_base)
 final_result = decimal_to_base(decimal_value, to_base)
 
+#output:
+
+Original number: 1A3
+From base: 16
+To base: 2
+Converted value: 110100011
+
+=== Code Execution Successful ===
+
 print("Original number:", num)
 print("From base:", from_base)
 print("To base:", to_base)
