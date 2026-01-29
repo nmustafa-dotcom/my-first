@@ -12,3 +12,4 @@ for digit in number[::-1]:
     power = power + 1
 
 print("Decimal value:", decimal)
+Decimal value: 13
